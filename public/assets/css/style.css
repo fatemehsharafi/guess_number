@@ -1,0 +1,40 @@
+:root {
+    --purple: #696BF5;
+}
+
+body {
+    font-family: 'Glory', sans-serif;
+}
+
+.btn-purple, .btn-purple:hover {
+    background-color: var(--purple);
+    color: white;
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.border-purple {
+    border-color: var(--purple) !important;
+    border-width: 2px !important;
+}
+
+.border-w2 {
+    border-width: 2px !important;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+}
+
+.input-border {
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+}
+
+.modal-backdrop {
+    background-color: transparent;
+}
