@@ -1,4 +1,4 @@
-<div class="d-flex flex-column text-center justify-content-center">
+<div class="d-flex flex-column text-center justify-content-center mt-4">
     <h2>Guess the Number</h2>
     <h2>"The greatest guessing ever guessed"</h2>
 </div>
