@@ -5,6 +5,8 @@
 git clone https://github.com/fatemehsharafi/guess_number.git
 cd guess_number
 composer install
+cp .env.example .env
+php artisan key:generate
 php artisan serve
 ```
 Now you can access to game on: localhost:8000
