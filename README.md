@@ -1,6 +1,6 @@
 ## Guess Number
 
-![preview](https://user-images.githubusercontent.com/12640517/132988071-0721f539-24d2-4fa9-8f27-847df4ba0d0e.png)
+![preview](https://user-images.githubusercontent.com/47884463/132988306-a2b7694d-e314-4075-b26b-a5ab7f3e4d5d.png)
 
 ### Installing
 ```
