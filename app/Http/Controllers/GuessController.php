@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\GuessNumberRequest;
 use App\Repositories\GuessNumber\GussNumber;
 use App\Traits\Serializer;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-
 
 class GuessController extends Controller
 {
@@ -19,7 +19,7 @@ class GuessController extends Controller
         $this->guessNumberRepository = $guessNumberRepository;
     }
 
-    public function index(Request $request): JsonResponse
+    public function index(GuessNumberRequest $request): JsonResponse
     {
         $result = $this->guessNumberRepository->guessNumber($request->number);
         return $this->toJson([], $result);

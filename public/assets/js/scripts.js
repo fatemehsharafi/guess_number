@@ -42,6 +42,7 @@ function sendNumber(id) {
         'number': number,
     };
     request(data, 'POST', checkNumberUrl).then(function (data) {
+        $(`#error-${id} .text-danger`).hide()
         if (data.message !== "Winner!") {
             $(`#message-box-${id}`).removeClass('d-none').show()
             $(`#message-${id}`).text(data.message)
@@ -49,6 +50,12 @@ function sendNumber(id) {
             return false
         }
         handleWinner(id)
+    }).catch(function (xhr) {
+        $(`#error-${id} .text-danger`).hide()
+        $.each(xhr.responseJSON.errors, function (key, value) {
+            $(`#error-${id}`).append('<p class="text-danger mt-2 mb-0">' + value + '</p');
+        })
+
     })
 }
 

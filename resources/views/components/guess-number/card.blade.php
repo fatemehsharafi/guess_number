@@ -5,6 +5,8 @@
             <input type="text" name="name" id="name-{{$userId}}" class="form-control text-center input-border"
                    value="Player Number {{$userId}}">
             <input type="number" name="number" id="number-{{$userId}}" class="form-control text-center mt-4">
+            <div id="error-{{$userId}}">
+            </div>
             <button onclick="sendNumber({{$userId}})" class="btn btn-purple mt-4">Guess Number</button>
         </div>
     </div>
