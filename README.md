@@ -1,5 +1,7 @@
 ## Guess Number
 
+![preview](https://user-images.githubusercontent.com/12640517/132988071-0721f539-24d2-4fa9-8f27-847df4ba0d0e.png)
+
 ### Installing
 ```
 git clone https://github.com/fatemehsharafi/guess_number.git
@@ -48,6 +50,8 @@ Of course there are a lot of way to implement this feature dynamically 🤓
 │   │   ├── Controller.php
 │   │   ├── GuessController.php
 │   │   └── HomeController.php
+│   └── Requests
+│       └── GuessNumberRequest.php
 ├── Repositories
 │   └── GuessNumber
 │       ├── GuessNumberInterface.php
@@ -59,6 +63,7 @@ Of course there are a lot of way to implement this feature dynamically 🤓
 └── View
     └── Components
         ├── GuessNumber
+        │   ├── Card.php
+        │   └── Modal.php
         └── Header.php
-
 ```
