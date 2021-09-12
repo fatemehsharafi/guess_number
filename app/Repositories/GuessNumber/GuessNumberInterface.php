@@ -4,5 +4,5 @@ namespace App\Repositories\GuessNumber;
 
 interface GuessNumberInterface
 {
-    public function guessNumber($number);
+    public function guessNumber(int $number);
 }

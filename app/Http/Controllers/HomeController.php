@@ -11,6 +11,7 @@ class HomeController extends Controller
     use Serializer;
 
     private $numberStorage;
+
     public function __construct(NumberStorage $numberStorage)
     {
         $this->numberStorage = $numberStorage;

@@ -7,6 +7,7 @@ use Illuminate\View\Component;
 class Card extends Component
 {
     public $userId;
+
     /**
      * Create a new component instance.
      *

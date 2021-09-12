@@ -8,7 +8,8 @@
             <button onclick="sendNumber({{$userId}})" class="btn btn-purple mt-4">Guess Number</button>
         </div>
     </div>
-    <div class="card justify-content-center flex-column align-items-center mb-4 mt-4 border-w2 d-none message-box" id="message-box-{{$userId}}">
+    <div class="card justify-content-center flex-column align-items-center mb-4 mt-4 border-w2 d-none message-box"
+         id="message-box-{{$userId}}">
         <p class="text-danger text-center mt-0 mb-0 p-2 message" id="message-{{$userId}}"></p>
     </div>
 </div>

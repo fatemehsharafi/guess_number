@@ -12,12 +12,13 @@ class GussNumber implements GuessNumberInterface
         'winner' => 'Winner!',
     ];
     private $numberStorage;
+
     public function __construct(NumberStorage $numberStorage)
     {
         $this->numberStorage = $numberStorage;
     }
 
-    public function guessNumber($number): string
+    public function guessNumber(int $number): string
     {
 
         $randNum = $this->numberStorage->getNumber();

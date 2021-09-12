@@ -6,9 +6,9 @@ class NumberStorage
 {
     public $numberKey = 'randNum';
 
-    public function generateNumber() :void
+    public function generateNumber(): void
     {
-        $randNumber = rand(1,100);
+        $randNumber = rand(1, 100);
         session()->put($this->numberKey, $randNumber);
     }
 
